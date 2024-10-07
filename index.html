@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <!-- Navigation Buttons for Month and Year -->
+      <div class="nav-buttons">
+        <button onclick="changeMonth(-1)">Previous Month</button>
+        <div class="month-year" id="monthYearDisplay"></div>
+        <button onclick="changeMonth(1)">Next Month</button>
+      </div>
+      <div class="nav-buttons">
+        <button onclick="changeYear(-1)">Previous Year</button>
+        <div id="yearDisplay"></div>
+        <button onclick="changeYear(1)">Next Year</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+          </tr>
+        </thead>
+        <tbody id="calendarBody"></tbody>
+      </table>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
